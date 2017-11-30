@@ -80,6 +80,11 @@ nmap<C-L> <C-W><C-L>
 "Make NERDTree easier to toggle"
 nmap <leader>t :NERDTreeToggle<cr>
 
+"Set F12 to preview LaTex file"
+nmap <F12> :LLPStartPreview<cr>
+
+"Set map to :tag
+nmap <leader>f :tag<space>
 
 "===================Auto-Commands==============="
 
@@ -89,3 +94,15 @@ augroup autosourcing
     autocmd!
     autocmd BufWritePost .vimrc source %
 augroup END
+
+"===================LaTex Preview==============="
+" Set frequency for LaTex auto update"
+autocmd FileType tex setl updatetime=1
+
+"===================Plugin setting=============="
+" CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+
+" NERDTree
+let NERDTreeHijackNetrw = 0
