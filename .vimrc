@@ -90,9 +90,12 @@ nmap <leader>f :tag<space>
 vnoremap <silent> # :s/^/#/<cr>:noh<cr>                                                                  
 vnoremap <silent> -# :s/^#//<cr>:noh<cr>                                                                 
                                                                                                          
-"Set map to python nosetests                                                                             
-set makeprg=nosetests                                                                                    
-nmap <leader>m :make<cr>  
+"Set map to python nosetests                                                                                                                                                      
+nmap <leader>n :nosetests<cr>  
+
+"Set map to paste current date in jekyll posts
+nnoremap <leader>dt "=strftime('%Y-%m-%d %H:%M:%S %z')<CR>P
+inoremap <leader>dt <C-R>=strftime('%Y-%m-%d %H:%M:%S %z')<CR>
 
 "===================Auto-Commands==============="
 
