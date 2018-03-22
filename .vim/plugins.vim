@@ -19,6 +19,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 "Bundle 'xuhdev/vim-latex-live-preview'
 "Plugin 'lervag/vimtex'
+"Plugin 'tpope/vim-fugitive'
 
 
 " All of your Plugins must be added before the following line
