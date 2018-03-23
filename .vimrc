@@ -96,6 +96,9 @@ nmap <leader>n :nosetests<cr>
 "Set map to paste current date in jekyll posts
 nnoremap <leader>dt "=strftime('%Y-%m-%d %H:%M:%S %z')<CR>P
 inoremap <leader>dt <C-R>=strftime('%Y-%m-%d %H:%M:%S %z')<CR>
+"===================abbreviate=================="
+"shortcut for main in python
+abbreviate ifm if __name__ == "__main__":
 
 "===================Auto-Commands==============="
 
